@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 int plus_one(int); // Function prototype (definition of function but it will be defined later);
+void foo(void); // Putting void in case of empty parameters passed to the function
 
 int main(void) {
     int goal_count = 0;
@@ -22,6 +23,15 @@ int main(void) {
     int i = 10, j;
     j = plus_one(i);
     printf("i+1 is %d \n", j);
+    unsigned int num = 0x1;
+    char *ptr = (char*)&num;
+
+    if (*ptr == 1){
+        printf("System is lil-endian \n");
+    } else {
+        printf("System is Big-endian \n");
+    }
+    printf("the address of i is %p\n", (void *)&i);
     return 0;
 };
 
