@@ -1,21 +1,30 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+int plus_one(int); // Function prototype (definition of function but it will be defined later);
 
 int main(void) {
-    int goal_count = 2;
+    int goal_count = 0;
     switch (goal_count) {
         case 0:
-            printf("You have no goals");
-            break;
+            printf("You have no goals \n");
         case 1: 
-            printf("You have one single goal");
+            printf("You have one single goal \n");
             break;
         case 2:
-            printf("You have 2 Goals");
+            printf("You have 2 Goals \n");
             break;
         default:
-            printf("you have plenty goals");
+            printf("you have plenty goals \n");
             break;
     }
+
+    int i = 10, j;
+    j = plus_one(i);
+    printf("i+1 is %d \n", j);
+    return 0;
 };
+
+int plus_one(int n) {
+    return n+1;
+}
