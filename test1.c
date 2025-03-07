@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-itn main(void) {
+int main(void) {
     int goal_count = 2;
     switch (goal_count) {
         case 0:
