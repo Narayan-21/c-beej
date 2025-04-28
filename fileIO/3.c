@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// fgets - to get the whole line 
 int main(void){
     FILE *fp;
     char s[1024];
