@@ -1,3 +1,6 @@
+// Array/pointer equivalence 
+// a[b] == *(a + b)
+
 #include <stdio.h>
 
 int main(void)
@@ -23,9 +26,9 @@ int main(void)
     for (int i = 0; i < 5; i++)
         printf("%d\n", *(p++));    // Moving pointer p
     printf("............\n");
-    for (int i=0; i<5; i++){
-        printf("%d\n", *(a++));    // Moving array variable a--ERROR!
-    };
+    // for (int i=0; i<5; i++){
+    //     printf("%d\n", *(a++));    // Moving array variable a--ERROR!
+    // };
 
     printf("--------\n");
 }
