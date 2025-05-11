@@ -20,7 +20,7 @@ int main(void) {
         return 1; 
     }
 
-    r = new_r;
+    r = new_r; // now both the r and new_r point to the same location in the memory
     for (int i = 20; i < 40; i++)
         r[i] = 1.0 + (i - 20) / 20.0;
 
