@@ -16,4 +16,7 @@ void main(void) {
     int *const p2 = &y;
     *p2 = 20; // Now, this will be set to 20;
     // p2++; // this will give the compile error.
+
+    // We can also make both the things work - 
+    const int *const p3;
 };
