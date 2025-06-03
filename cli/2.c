@@ -11,3 +11,5 @@ int main(int argc, char **argv) {
     printf("%d\n", total);
     return 0;
 }
+
+// changing the argv[0] results in changing of process (ps) that we list in the unix-like systems.
