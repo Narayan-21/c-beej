@@ -1,3 +1,5 @@
+// Env var - 1
+
 // In unix-like system - extern char **environ; => its an array of strings terminated by NULL pointer.
 #include <stdio.h>
 
