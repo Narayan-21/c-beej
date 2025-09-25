@@ -16,3 +16,75 @@ a.out
 
 # Ignore VS Code settings (if using VS Code)
 .vscode/
+# Ignore all compiled executables at any folder
+**/*.exe
+**/*.out
+**/a.out
+**/*[!.]*  # catches files with no extension (common GCC outputs, optional)
+**/*.bin   # optional, if you have .bin outputs
+
+# Ignore all object files
+**/*.o
+
+# Ignore debugging files
+**/*.gch
+**/*.dSYM/
+
+# Ignore logs and temporary files
+**/*.log
+**/*.tmp
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore specific homework folders (optional)
+hw/
+hw2/
+
+# Ignore everything else except source code files
+*
+!*.*
+!*/
+
+# Ignore all executables at any level
+**/*
+!**/*.c
+!**/*.h
+!*/
+
+# Ignore all compiled executables and object files
+**/*.out
+**/a.out
+**/*.o
+**/*[!.]*   # catches binaries with no extension like "arrays"
+
+# Ignore compiled executables
+*.exe
+*.out
+a.out
+# Ignore any binary files (common GCC outputs)
+file
+*.bin
+
+# Ignore object files
+*.o
+
+# Ignore debugging files
+*.gch
+*.dSYM/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore hw folders (if needed)
+hw/
+hw2/
+
+# Ignore everything else by default except these patterns
+*
+!*.*
+!*/
